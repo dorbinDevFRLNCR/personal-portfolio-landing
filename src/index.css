@@ -1,1 +1,113 @@
 @import "tailwindcss";
+
+@theme{
+  --navy: #0A0E2E;
+  --navy-light: #111640;
+  --purple: #3D1060;
+  --purple-mid: #5B1A8A;
+  --pink: #F0306A;
+  --coral: #FF7054;
+  --grad-hover: linear-gradient(135deg, #9C27B0, #FF5085);
+  --color-text: #EEF0FF;
+  --color-muted: #8B90B8;
+  --font-heading: 'Syne', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+p{
+  color: var(--color-muted);
+  font-family: var(--font-body);
+}
+
+.logo, .title{
+  background: linear-gradient(135deg, #7B1FA2, #F0306A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.grad{
+  background: linear-gradient(135deg, #7B1FA2, #F0306A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.menu{
+  background: var(--navy);
+}
+
+body {
+    background: var(--navy);
+    color: var(--text);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.4;
+}
+
+/* index.css */
+.btn-primary {
+  background: linear-gradient(135deg, #7B1FA2, #F0306A);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 24px rgba(240, 48, 106, 0.3);
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #9C27B0, #FF5085);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(240, 48, 106, 0.45);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #EEF0FF;
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 14px 32px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+  border-color: rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.05);
+  transform: translateY(-2px);
+}
+
+.badge-tech {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #8B90B8;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.3s;
+  cursor: default;
+  user-select: none;
+}
+
+.badge-tech:hover {
+  background: rgba(123, 31, 162, 0.2);
+  border-color: rgba(240, 48, 106, 0.4);
+  color: #C77DFF;
+  transform: translateY(-2px);
+}
