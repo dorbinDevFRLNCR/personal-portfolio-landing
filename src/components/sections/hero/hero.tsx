@@ -1,5 +1,6 @@
 import Button from '../../ui/button/button'
 import Badge from '../../ui/skillBage/badge'
+import { CgArrowRight } from 'react-icons/cg'
 
 function Hero() {
   return (
@@ -30,7 +31,7 @@ function Hero() {
           <span style={{ background: '#C77DFF' }} className="w-2 h-2 rounded-full animate-pulse" />
           Открыт к заказам
         </div>
-        <h1 className="text-5xl font-bold tracker-tight mt-4 text-white md:text-7xl">
+        <h1 className="text-5xl font-bold max-w-2xs tracking-tight mt-4 text-white md:text-7xl">
           Frontend <span className="grad">React</span> Developer
         </h1>
         <p className="text-base text-gray-300 mt-8 max-w-3xl">
@@ -38,10 +39,10 @@ function Hero() {
           удобные интерфейсы — от лендингов до e-commerce.
         </p>
         <div className="flex gap-4 flex-col mt-8">
-          <Button variant="primary" className="text-base">
-            Смотреть проекты
+          <Button variant="primary" className="text-base flex items-center gap-2 w-max">
+            Смотреть проекты <CgArrowRight />
           </Button>
-          <Button variant="secondary" className="text-base">
+          <Button variant="secondary" className="text-base w-max">
             Связаться со мной
           </Button>
         </div>

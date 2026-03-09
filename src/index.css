@@ -7,7 +7,6 @@
   --purple-mid: #5B1A8A;
   --pink: #F0306A;
   --coral: #FF7054;
-  --grad-hover: linear-gradient(135deg, #9C27B0, #FF5085);
   --color-text: #EEF0FF;
   --color-muted: #8B90B8;
   --font-heading: 'Syne', sans-serif;
@@ -23,7 +22,7 @@ p{
   font-family: var(--font-body);
 }
 
-.logo, .title{
+.logo, .title, .subtitle {
   background: linear-gradient(135deg, #7B1FA2, #F0306A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -72,6 +71,7 @@ body::before {
 
 .btn-primary:hover {
   background: linear-gradient(135deg, #9C27B0, #FF5085);
+  align-items: center;
   transform: translateY(-2px);
   box-shadow: 0 8px 32px rgba(240, 48, 106, 0.45);
 }
@@ -111,3 +111,37 @@ body::before {
   color: #C77DFF;
   transform: translateY(-2px);
 }
+
+.project-card, .stat-card{
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s;
+}
+
+.project-card:hover, .stat-card:hover {
+  background: rgba(123, 31, 162, 0.2);
+  box-shadow: 0 8px 32px rgba(240, 48, 106, 0.3);
+}
+
+.input-field, textarea {
+  background: var(--navy-light);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 14px 18px;
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 300;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    width: 100%;  
+}
+
+.input-field, textarea::placeholder {
+  color: rgba(139, 144, 184, 0.5);
+} 
+
+.input-field:focus, textarea:focus{
+  border-color: rgba(123, 31, 162, 0.6);
+    box-shadow: 0 0 0 3px rgba(123, 31, 162, 0.15);
+}
+

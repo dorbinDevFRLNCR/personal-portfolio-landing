@@ -1,11 +1,12 @@
 type Props = {
+  onClick?: () => void
   children: React.ReactNode
   style?: React.CSSProperties
 }
 
-function Badge({ children, style }: Props) {
+function Badge({ onClick, children, style }: Props) {
   return (
-    <span className="badge-tech" style={style}>
+    <span className="badge-tech" style={style} onClick={onClick}>
       {children}
     </span>
   )
