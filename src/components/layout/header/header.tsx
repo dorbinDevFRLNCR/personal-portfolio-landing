@@ -21,17 +21,23 @@ function Header() {
     visible: { opacity: 1, y: 0 },
   }
 
+  const menuItems = [
+    { name: 'Проекты', link: '#projects' },
+    { name: 'Обо мне', link: '#about' },
+    { name: 'Контакты', link: '#contact' },
+  ]
+
   return (
-    <header className="w-full">
+    <header className="w-full sticky top-0 z-50 shadow-md backdrop-blur-sm background-opacity-40">
       <div className="max-w-7xl mx-auto flex px-4 py-4 items-center justify-between">
         <div>
           <p className="logo font-heading text-xl font-bold tracking-tighter">dev.portfolio</p>
         </div>
         <nav className="hidden md:block">
           <ul className="flex gap-8 list-none text-lg">
-            {['Проекты', 'Обо мне', 'Контакты'].map((item) => (
-              <li className="text-muted hover:text-text" key={item}>
-                <a href={`#${item.toLowerCase().replace(' ', '-')}`}>{item}</a>
+            {menuItems.map((item) => (
+              <li className="text-muted hover:text-text" key={item.link}>
+                <a href={item.link}>{item.name}</a>
               </li>
             ))}
           </ul>
@@ -70,13 +76,15 @@ function Header() {
                     animate="visible"
                     className="absolute top-30 flex flex-col gap-8 list-none"
                   >
-                    {['Проекты', 'Обо мне', 'Контакты'].map((item) => (
+                    {menuItems.map((item) => (
                       <motion.li
                         className="text-muted active:text-text transition-colors hover:text-text"
                         variants={itemVariants}
-                        key={item}
+                        key={item.link}
                       >
-                        <a href={`#${item.toLowerCase().replace(' ', '-')}`}>{item}</a>
+                        <a onClick={() => setIsMenuOpen(!isMenuOpen)} href={item.link}>
+                          {item.name}
+                        </a>
                       </motion.li>
                     ))}
                   </motion.ul>

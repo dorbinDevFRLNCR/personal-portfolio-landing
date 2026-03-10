@@ -11,7 +11,7 @@ const counterStats = [
 
 function About() {
   return (
-    <section className="pb-8 pt-4">
+    <section id="about" className="pb-8 pt-4">
       <div className="mb-4">
         <span className="subtitle uppercase text-sm font-semibold tracking-tighter">
           Немного о себе

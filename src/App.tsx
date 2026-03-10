@@ -5,6 +5,8 @@ import Contact from './components/sections/contact/contact'
 import Hero from './components/sections/hero/hero'
 import Projects from './components/sections/projects/projects'
 import SectionLine from './components/ui/sectionLine/sectionLine'
+import CallMe from './components/ui/callMe/callMe'
+
 function App() {
   return (
     <>
@@ -17,6 +19,8 @@ function App() {
         <About />
         <SectionLine className="my-8" />
         <Contact />
+        <SectionLine className="my-8" />
+        <CallMe />
       </main>
     </>
   )

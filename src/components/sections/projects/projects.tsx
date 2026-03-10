@@ -23,7 +23,7 @@ const metadata = [
 
 function Projects() {
   return (
-    <section className="pb-8 pt-4">
+    <section id="projects" className="pb-8 pt-4">
       <div className="mb-4">
         <span className="subtitle uppercase text-sm font-semibold tracking-tighter">
           Мои работы

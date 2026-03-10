@@ -45,7 +45,7 @@ function Contact() {
   }
 
   return (
-    <section>
+    <section id="contact" className="py-4">
       <div className="mb-4">
         <span className="subtitle uppercase text-sm font-semibold tracking-tighter">Заявка</span>
         <h3 className="text-3xl font-bold text-white my-2">Расскажи о проекте</h3>
