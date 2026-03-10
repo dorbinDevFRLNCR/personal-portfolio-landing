@@ -13,6 +13,9 @@ function Contact() {
   const handleSubmit = async () => {
     console.log('handleSubmit вызван')
     console.log({ name, email, message })
+    console.log('SERVICE:', import.meta.env.VITE_EMAILJS_SERVICE_ID)
+    console.log('TEMPLATE:', import.meta.env.VITE_EMAILJS_TEMPLATE_ID)
+    console.log('KEY:', import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
     // валидация
     if (!name || !email || !message) {
       console.log('валидация не прошла')
@@ -70,6 +73,7 @@ function Contact() {
           onChange={(value) => setMessage(value)}
         />
         <Button
+          type="button"
           variant="primary"
           onClick={handleSubmit}
           className="flex gap-2 items-center justify-center"
