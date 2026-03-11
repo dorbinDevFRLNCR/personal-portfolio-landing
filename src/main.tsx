@@ -13,10 +13,14 @@ import '@fontsource/dm-sans/300.css'
 import '@fontsource/dm-sans/400.css'
 import '@fontsource/dm-sans/500.css'
 
+import { BrowserRouter } from 'react-router-dom'
+
 emailJS.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </StrictMode>
 )

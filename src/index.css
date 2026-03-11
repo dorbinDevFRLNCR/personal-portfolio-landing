@@ -77,6 +77,12 @@ body::before {
   transition: all 0.3s;
 }
 
+.btn-primary, .btn-secondary{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .btn-primary:hover {
   background: linear-gradient(135deg, #9C27B0, #FF5085);
   align-items: center;

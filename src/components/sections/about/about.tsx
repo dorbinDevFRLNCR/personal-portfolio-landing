@@ -16,19 +16,19 @@ function About() {
         <span className="subtitle uppercase text-sm font-semibold tracking-tighter">
           Немного о себе
         </span>
-        <h3 className="text-3xl font-bold text-white my-2">Кто я</h3>
+        <h3 className="text-3xl font-bold text-white my-2 md:text-5xl">Кто я</h3>
       </div>
       <div className="mb-8">
-        <p className="mb-4">
+        <p className="mb-4 md:text-lg">
           Привет! Меня зовут <span className="text-white">Кирилл</span> — frontend разработчик,
           специализируюсь на React-приложениях. Пишу на TypeScript, верстаю с Tailwind CSS, управляю
           стейтом через Zustand.
         </p>
-        <p className="mb-4">
+        <p className="mb-4 md:text-lg">
           Мне важно чтобы код <span className="text-white">был чистым и читаемым</span>, а интерфейс
           — <span className="text-white">удобным и быстрым</span>. Каждый проект делаю как для себя.
         </p>
-        <p className="mb-4">
+        <p className="mb-4 md:text-lg">
           Готов браться за лендинги, корпоративные сайты и фронтенд для e-commerce проектов
         </p>
       </div>

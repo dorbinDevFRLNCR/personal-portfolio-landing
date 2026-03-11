@@ -3,6 +3,7 @@ import { CgMenu } from 'react-icons/cg'
 import Modal from '../../ui/modal/modal'
 import { motion } from 'framer-motion'
 import { AnimatePresence } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -31,10 +32,12 @@ function Header() {
     <header className="w-full sticky top-0 z-50 shadow-md backdrop-blur-sm background-opacity-40">
       <div className="max-w-7xl mx-auto flex px-4 py-4 items-center justify-between">
         <div>
-          <p className="logo font-heading text-xl font-bold tracking-tighter">dev.portfolio</p>
+          <Link className="logo font-heading text-xl font-bold tracking-tighter" to="/">
+            dev.portfolio
+          </Link>
         </div>
         <nav className="hidden md:block">
-          <ul className="flex gap-8 list-none text-lg">
+          <ul className="flex gap-8 list-none text-sm">
             {menuItems.map((item) => (
               <li className="text-muted hover:text-text" key={item.link}>
                 <a href={item.link}>{item.name}</a>
@@ -82,7 +85,11 @@ function Header() {
                         variants={itemVariants}
                         key={item.link}
                       >
-                        <a onClick={() => setIsMenuOpen(!isMenuOpen)} href={item.link}>
+                        <a
+                          className="text-xl"
+                          onClick={() => setIsMenuOpen(!isMenuOpen)}
+                          href={item.link}
+                        >
                           {item.name}
                         </a>
                       </motion.li>

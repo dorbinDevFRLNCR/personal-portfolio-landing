@@ -1,3 +1,5 @@
+import CallsGrid from '../callsGrid/callsGrid'
+
 function CallMe() {
   return (
     <div className="call-me-card relative rounded-xl overflow-hidden">
@@ -18,6 +20,9 @@ function CallMe() {
           </h4>
           <div className="text-3xl pb-2">👋</div>
           <p className="text-center">Готов взяться за фриланс-заказы. Пишите — отвечу быстро.</p>
+        </div>
+        <div className="mt-8">
+          <CallsGrid />
         </div>
       </div>
     </div>
