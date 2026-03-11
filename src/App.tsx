@@ -29,8 +29,13 @@ function App() {
           content="Portfolio of Kyrylo Pavlov. React, TypeScript and modern frontend development."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="/" />
-        <meta property="og:image" content="/preview.webp" />
+        <meta property="og:url" content="https://personal-portfolio-landing-theta.vercel.app/" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta
+          property="og:image"
+          content="https://personal-portfolio-landing-theta.vercel.app/preview.webp"
+        />
       </Helmet>
       <Routes>
         <Route
