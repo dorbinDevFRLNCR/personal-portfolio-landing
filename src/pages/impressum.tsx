@@ -1,9 +1,14 @@
 import Header from '../components/layout/header/header'
 import Footer from '../components/layout/footer/footer'
+import { Helmet } from 'react-helmet-async'
 
 function Impressum() {
   return (
     <>
+      <Helmet>
+        <title>Kyrylo Pavlov | Impressum</title>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
       <Header />
       <main className="max-w-3xl mx-auto px-6 py-12">
         <h1 className="text-muted">Impressum</h1>

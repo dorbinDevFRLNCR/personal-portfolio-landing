@@ -1,10 +1,15 @@
 // app/datenschutz/page.tsx
 import Header from '../components/layout/header/header'
 import Footer from '../components/layout/footer/footer'
+import { Helmet } from 'react-helmet-async'
 
 function DatenschutzPage() {
   return (
     <>
+      <Helmet>
+        <title>Kyrylo Pavlov | Datenschutzerklärung</title>
+        <meta name="robots" content="noindex, nofollow" />
+      </Helmet>
       <Header />
       <main className="container text-muted mx-auto px-4 py-12 max-w-4xl prose prose-slate prose-headings:text-slate-900 prose-a:text-blue-600 hover:prose-a:underline">
         <div className="privacy-policy">

@@ -10,10 +10,28 @@ import CallMe from './components/ui/callMe/callMe'
 import Footer from './components/layout/footer/footer'
 import Impressum from './pages/impressum'
 import DatenschutzPage from './pages/datenschutz'
+import { Helmet } from 'react-helmet-async'
 
 function App() {
   return (
     <>
+      <Helmet>
+        <title>Kyrylo Pavlov | Frontend Developer Portfolio</title>
+        <meta
+          name="description"
+          content="Frontend Developer portfolio of Kyrylo Pavlov. React, TypeScript and modern web development projects."
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="/" />
+        <meta property="og:title" content="Kyrylo Pavlov | Frontend Developer" />
+        <meta
+          property="og:description"
+          content="Portfolio of Kyrylo Pavlov. React, TypeScript and modern frontend development."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="/" />
+        <meta property="og:image" content="/preview.webp" />
+      </Helmet>
       <Routes>
         <Route
           path="/"

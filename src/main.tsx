@@ -14,13 +14,16 @@ import '@fontsource/dm-sans/400.css'
 import '@fontsource/dm-sans/500.css'
 
 import { BrowserRouter } from 'react-router-dom'
+import { HelmetProvider } from 'react-helmet-async'
 
 emailJS.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <HelmetProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </HelmetProvider>
   </StrictMode>
 )
