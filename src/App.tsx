@@ -22,20 +22,6 @@ function App() {
           content="Frontend Developer portfolio of Kyrylo Pavlov. React, TypeScript and modern web development projects."
         />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="/" />
-        <meta property="og:title" content="Kyrylo Pavlov | Frontend Developer" />
-        <meta
-          property="og:description"
-          content="Portfolio of Kyrylo Pavlov. React, TypeScript and modern frontend development."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://personal-portfolio-landing-theta.vercel.app/" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta
-          property="og:image"
-          content="https://personal-portfolio-landing-theta.vercel.app/preview.webp"
-        />
       </Helmet>
       <Routes>
         <Route
