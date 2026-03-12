@@ -2,6 +2,7 @@
 import Header from '../components/layout/header/header'
 import Footer from '../components/layout/footer/footer'
 import { Helmet } from 'react-helmet-async'
+import { Link } from 'react-router'
 
 function DatenschutzPage() {
   return (
@@ -72,9 +73,9 @@ function DatenschutzPage() {
 
           <p>
             Impressum:{' '}
-            <a className="underline" href="/impressum">
-              impressum
-            </a>
+            <Link className="underline" to="/impressum">
+              Impressum
+            </Link>
           </p>
 
           <h2 id="mOverview">Übersicht der Verarbeitungen</h2>
