@@ -11,10 +11,35 @@ import Footer from './components/layout/footer/footer'
 import Impressum from './pages/impressum'
 import DatenschutzPage from './pages/datenschutz'
 import { Helmet } from 'react-helmet-async'
+import { Toaster } from 'react-hot-toast'
 
 function App() {
   return (
     <>
+      <Toaster
+        position="top-center"
+        toastOptions={{
+          style: {
+            background: '#1a1a2e',
+            color: '#EEF0FF',
+            border: '1px solid rgba(255,255,255,0.1)',
+            borderRadius: '12px',
+            fontSize: '14px',
+          },
+          success: {
+            iconTheme: {
+              primary: '#C77DFF',
+              secondary: '#1a1a2e',
+            },
+          },
+          error: {
+            iconTheme: {
+              primary: '#F0306A',
+              secondary: '#1a1a2e',
+            },
+          },
+        }}
+      />
       <Helmet>
         <title>Kyrylo Pavlov | Frontend Developer Portfolio</title>
         <meta

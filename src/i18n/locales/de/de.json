@@ -1,0 +1,70 @@
+{
+  "nav": {
+    "projects": "Projekte",
+    "about": "Über mich",
+    "contacts": "Kontakte"
+  },
+  "hero": {
+    "badge": "Bestellungen möglich",
+    "info": "Ich entwickle schnelle und ansprechende Webanwendungen mit React und TypeScript. Ich schreibe sauberen Code und gestalte benutzerfreundliche Oberflächen – von Landingpages bis hin zu E-Commerce-Lösungen.",
+    "btnProjects": "Projekte ansehen",
+    "btnContact": "Kontaktieren"
+  },
+  "projects": {
+    "subtitle": "Meine Arbeiten",
+    "title": "Projekte",
+    "items": {
+      "vantage": {
+        "description": "Eine Landingpage mit vollem Funktionsumfang für ein SaaS-Produkt. Responsives Layout, Hamburger-Menü, Abschnitte zur Hervorhebung von Funktionen, Bewertungen und Preisen."
+      },
+      "furniro": {
+        "description": "Ein Online-Möbelgeschäft mit Warenkorb, Favoriten und Benachrichtigungen. Zustandsverwaltung auf Zustand."
+      }
+    },
+    "btn": "Projekt öffnen"
+  },
+  "about": {
+    "items": {
+      "projectsCount": {
+        "description": "Fertigprojekte"
+      },
+      "older": {
+        "description": "Alt, jung und hungrig"
+      },
+      "cafee": {
+        "description": "Wie viel Kaffee habe ich getrunken"
+      },
+      "responsive": {
+        "description": "Responsives Layout"
+      }
+    },
+    "subtitle": "Ein wenig über mich",
+    "title": "Wer bin ich",
+    "firstp": "Hallo! Mein Name ist <1>Kirill</1> – ich bin Frontend-Entwickler und habe mich auf React-Anwendungen spezialisiert. Ich programmiere in TypeScript, gestalte meine Layouts mit Tailwind CSS und verwalte den State mit Zustand.",
+    "secondp": "Mir ist es wichtig, dass der Code <w>sauber und gut lesbar</w> ist und dass die Benutzeroberfläche <w>benutzerfreundlich und schnell</w> ist. Ich gehe jedes Projekt so an, als würde ich es für mich selbst entwickeln.",
+    "thirdp": "Ich bin bereit, Landingpages, Unternehmenswebsites und die Frontend-Entwicklung für E-Commerce-Projekte zu übernehmen.",
+    "btn": "Das Projekt besprechen"
+  },
+  "contact": {
+    "subtitle": "Anwendung",
+    "title": "Erzähl mir etwas über das Projekt",
+    "nameLabel": "Name*",
+    "namePlaceholder": "Wie heißt du?",
+    "emailLabel": "Email*",
+    "emailPlaceholder": "your@email.com",
+    "messageLabel": "Projektbeschreibung*",
+    "messagePlaceholder": "Sag mir, was zu tun ist – die Art der Website, ihre Funktionen, die Frist...",
+    "btn": "Anfrage senden",
+    "successMsg": "Anfrage gesendet!",
+    "errorMsg": "Beim Senden der Nachricht ist ein Fehler aufgetreten. Bitte versuche es später erneut."
+  },
+  "callMe": {
+    "subtitle": "Kommunikation",
+    "title": "Hast du ein Projekt? Lass uns darüber reden",
+    "info": "Ich stehe für freiberufliche Projekte zur Verfügung. Melden Sie sich gerne bei mir – ich melde mich umgehend bei Ihnen."
+  },
+  "footer": {
+    "first": "Mit",
+    "last": "und starkem Kaffee gemacht."
+  }
+}

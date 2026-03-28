@@ -1,6 +1,9 @@
 import CallsGrid from '../callsGrid/callsGrid'
+import { useTranslation } from 'react-i18next'
 
 function CallMe() {
+  const { t } = useTranslation()
+
   return (
     <div className="call-me-card relative rounded-xl overflow-hidden">
       <div
@@ -13,13 +16,13 @@ function CallMe() {
       <div className="py-12 px-4">
         <div className="flex flex-col items-center">
           <span className="subtitle uppercase text-sm font-semibold tracking-tighter pb-4">
-            Связь
+            {t('callMe.subtitle')}
           </span>
           <h4 className="text-white text-3xl text-center font-bold font-body px-4">
-            Есть проект? Давай поговорим
+            {t('callMe.title')}
           </h4>
           <div className="text-3xl pb-2">👋</div>
-          <p className="text-center">Готов взяться за фриланс-заказы. Пишите — отвечу быстро.</p>
+          <p className="text-center">{t('callMe.info')}</p>
         </div>
         <div className="mt-8">
           <CallsGrid />

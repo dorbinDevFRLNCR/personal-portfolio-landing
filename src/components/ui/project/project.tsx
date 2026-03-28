@@ -2,6 +2,7 @@ import Badge from '../skillBage/badge'
 import { CgArrowRight } from 'react-icons/cg'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 
 type ProjectProps = {
   projectImage: string
@@ -19,6 +20,8 @@ function Project({
   projectLink,
 }: ProjectProps) {
   const [showAll, setShowAll] = useState(false)
+
+  const { t } = useTranslation()
 
   const visibleTags = showAll ? projectTags : projectTags.slice(0, 3)
 
@@ -55,7 +58,7 @@ function Project({
           className="inline-flex items-center gap-2 text-sm font-medium transition-all hover:gap-[10px] hover:-translate-y-[2px] active:gap-[10px] active:-translate-y-[2px]"
           style={{ color: '#C77DFF' }}
         >
-          Открыть проект
+          {t('projects.btn')}
           <CgArrowRight size={16} />
         </a>
       </div>

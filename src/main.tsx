@@ -3,6 +3,9 @@ import { createRoot } from 'react-dom/client'
 import emailJS from '@emailjs/browser'
 import './index.css'
 import App from './App.tsx'
+import './i18n/i18n.ts'
+
+import './i18n/i18n.ts'
 
 import '@fontsource/syne/400.css'
 import '@fontsource/syne/600.css'

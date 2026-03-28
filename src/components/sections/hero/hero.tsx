@@ -1,6 +1,7 @@
 import Button from '../../ui/button/button'
 import Badge from '../../ui/skillBage/badge'
 import { CgArrowRight } from 'react-icons/cg'
+import { useTranslation } from 'react-i18next'
 
 const scrollTo = (id: string) => {
   const element = document.getElementById(id)
@@ -13,6 +14,8 @@ const scrollTo = (id: string) => {
 }
 
 function Hero() {
+  const { t } = useTranslation()
+
   return (
     <section className="relative overflow-hidden hero">
       <div
@@ -39,14 +42,13 @@ function Hero() {
           className="inline-flex items-center gap-2 border text-purple-300 px-4 py-1.5 rounded-full text-sm font-medium"
         >
           <span style={{ background: '#C77DFF' }} className="w-2 h-2 rounded-full animate-pulse" />
-          Открыт к заказам
+          {t('hero.badge')}
         </div>
         <h1 className="text-5xl font-bold max-w-2xs tracking-tight mt-4 text-white md:text-7xl lg:text-8xl">
           Frontend <span className="grad">React</span> Developer
         </h1>
         <p className="text-base text-gray-300 mt-8 max-w-3xl md:text-xl md:max-w-2xl">
-          Создаю быстрые и красивые веб-приложения на React + TypeScript. Пишу чистый код, делаю
-          удобные интерфейсы — от лендингов до e-commerce.
+          {t('hero.info')}
         </p>
         <div className="flex gap-4 flex-col mt-8 md:flex-row">
           <Button
@@ -54,14 +56,14 @@ function Hero() {
             variant="primary"
             className="text-base flex items-center gap-2 w-max"
           >
-            Смотреть проекты <CgArrowRight />
+            {t('hero.btnProjects')} <CgArrowRight />
           </Button>
           <Button
             onClick={() => scrollTo('contact')}
             variant="secondary"
             className="text-base w-max"
           >
-            Связаться со мной
+            {t('hero.btnContact')}
           </Button>
         </div>
         <div className="flex flex-wrap gap-2 pt-4">

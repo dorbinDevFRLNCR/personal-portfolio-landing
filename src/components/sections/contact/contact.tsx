@@ -4,6 +4,8 @@ import Button from '../../ui/button/button'
 import { CgArrowRight } from 'react-icons/cg'
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
+import { useTranslation } from 'react-i18next'
+import toast from 'react-hot-toast'
 
 function Contact() {
   const [name, setName] = useState('')
@@ -37,38 +39,42 @@ function Contact() {
       )
       console.log('результат:', result)
       // успех
-      alert('Сообщение отправлено!')
+      toast.success(t('contact.successMsg'))
     } catch (error) {
       console.error('Ошибка при отправке:', error)
-      alert('Ошибка при отправке сообщения. Попробуйте позже.')
+      toast.error(t('contact.errorMsg'))
     }
   }
+
+  const { t } = useTranslation()
 
   return (
     <section id="contact" className="py-4">
       <div className="mb-4">
-        <span className="subtitle uppercase text-sm font-semibold tracking-tighter">Заявка</span>
-        <h3 className="text-3xl font-bold text-white my-2">Расскажи о проекте</h3>
+        <span className="subtitle uppercase text-sm font-semibold tracking-tighter">
+          {t('contact.subtitle')}
+        </span>
+        <h3 className="text-3xl font-bold text-white my-2">{t('contact.title')}</h3>
       </div>
       <form className="flex flex-col gap-6">
         <Input
-          label="Имя*"
-          placeholder="Как тебя зовут?"
+          label={t('contact.nameLabel')}
+          placeholder={t('contact.namePlaceholder')}
           value={name}
           onChange={(value) => setName(value)}
         />
 
         <Input
-          label="Email*"
-          placeholder="your@email.com"
+          label={t('contact.emailLabel')}
+          placeholder={t('contact.emailPlaceholder')}
           value={email}
           onChange={(value) => setEmail(value)}
           type="email"
         />
 
         <Textarea
-          label="Описание проекта*"
-          placeholder="Расскажи что нужно сделать - тип сайта, функционал, дедлайн..."
+          label={t('contact.messageLabel')}
+          placeholder={t('contact.messagePlaceholder')}
           value={message}
           onChange={(value) => setMessage(value)}
         />
@@ -78,7 +84,7 @@ function Contact() {
           onClick={handleSubmit}
           className="flex gap-2 items-center justify-center"
         >
-          Отправить заявку <CgArrowRight size={16} />
+          {t('contact.btn')} <CgArrowRight size={16} />
         </Button>
       </form>
     </section>
