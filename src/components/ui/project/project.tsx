@@ -1,4 +1,4 @@
-import Badge from '../skillBage/badge'
+import Badge from '../skillBadge/badge'
 import { CgArrowRight } from 'react-icons/cg'
 import { useState } from 'react'
 import { motion } from 'framer-motion'

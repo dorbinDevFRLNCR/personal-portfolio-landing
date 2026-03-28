@@ -1,5 +1,5 @@
 import Button from '../../ui/button/button'
-import Badge from '../../ui/skillBage/badge'
+import Badge from '../../ui/skillBadge/badge'
 import { CgArrowRight } from 'react-icons/cg'
 import { useTranslation } from 'react-i18next'
 
