@@ -2,9 +2,9 @@
 
 import { useState, useRef, useEffect, useTransition } from 'react'
 import { useLocale } from 'next-intl'
-// 1. ИМПОРТИРУЕМ ИЗ ТВОЕГО ФАЙЛА РОУТИНГА NEXT-INTL
 import { usePathname, useRouter } from '@/src/i18n/routing'
 import { motion, AnimatePresence } from 'framer-motion'
+import { Link } from '@/src/i18n/routing'
 
 const LANGS = [
   { code: 'en', label: 'EN' },
@@ -17,7 +17,6 @@ export default function LanguageSwitcher() {
   const pathname = usePathname()
   const router = useRouter()
 
-  // 2. Добавляем useTransition для бесшовного обновления
   const [isPending, startTransition] = useTransition()
 
   const [isOpen, setIsOpen] = useState(false)
@@ -28,7 +27,7 @@ export default function LanguageSwitcher() {
     if (newLocale === currentLocale) return
 
     startTransition(() => {
-      router.replace(pathname, { locale: newLocale })
+      router.replace(pathname, { locale: newLocale, scroll: false })
     })
   }
 

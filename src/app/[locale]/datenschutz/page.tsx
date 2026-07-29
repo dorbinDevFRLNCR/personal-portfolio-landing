@@ -1,4 +1,18 @@
 import { Link } from '@/src/i18n/routing'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Datenschutzerklärung | Kirill Pavlov',
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
+}
 
 export default function DatenschutzPage() {
   return (

@@ -1,10 +1,25 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Impressum | Kirill Pavlov',
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
+}
+
 export default function ImpressumPage() {
   return (
     <>
       <h1 className="text-muted">Impressum</h1>
       <p>Angaben gemäß § 5 DDG</p>
       <p>
-        {process.env.NEXT_NAME_SURNAME}
+        {process.env.NEXT_PUBLIC_NAME_SURNAME}
         <br />
         <br />
         {process.env.NEXT_PUBLIC_ADDRESS}

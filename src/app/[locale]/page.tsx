@@ -11,14 +11,16 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   return (
     <>
       <Hero />
-      <SectionLine className="my-4 md:my-8" />
-      <Projects />
-      <SectionLine className="my-4 md:my-8" />
-      <About />
-      <SectionLine className="my-4 md:my-8" />
-      <Contact />
-      <SectionLine className="my-4 md:my-8" />
-      <CallMe />
+      <div className="w-full max-w-7xl mx-auto px-4 py-8">
+        <SectionLine className="my-4 md:my-8" />
+        <Projects />
+        <SectionLine className="my-4 md:my-8" />
+        <About />
+        <SectionLine className="my-4 md:my-8" />
+        <Contact />
+        <SectionLine className="my-4 md:my-8" />
+        <CallMe />
+      </div>
     </>
   )
 }

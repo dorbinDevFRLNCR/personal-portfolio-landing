@@ -19,8 +19,7 @@ export default async function Footer() {
 
       <div className="container mx-auto px-4 py-4">
         <p className="text-center text-sm text-gray-500">
-          &copy; {new Date().getFullYear()} Kirill Pavlov - React Developer · {t('first')} ❤️{' '}
-          {t('last')}
+          &copy; {new Date().getFullYear()} Kirill Pavlov - Angehender Software Developer
         </p>
       </div>
     </footer>

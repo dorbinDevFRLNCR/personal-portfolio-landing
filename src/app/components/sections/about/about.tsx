@@ -1,14 +1,7 @@
 import Button from '../../ui/button/button'
 import { CgArrowRight } from 'react-icons/cg'
-import Stat from '../../ui/stat/stat'
 import { getTranslations } from 'next-intl/server'
-
-const counterStats = [
-  { id: 'projectsCount', statCount: 3, statTitle: 'Готовых проекта', isPercentage: false },
-  { id: 'older', statCount: 18, statTitle: 'Лет, молодой и голодный', isPercentage: false },
-  { id: 'cafee', infinite: true, statTitle: 'Кофе выпито', isPercentage: false },
-  { id: 'responsive', statCount: 100, statTitle: 'Адаптивная вёрстка', isPercentage: true },
-]
+import StatsGrid from './statsGrid'
 
 async function About() {
   const t = await getTranslations('about')
@@ -32,23 +25,24 @@ async function About() {
             w: (chunks) => <span className="text-white font-semibold">{chunks}</span>,
           })}
         </p>
-        <p className="mb-4 md:text-lg">{t('thirdp')}</p>
+        <p className="mb-4 md:text-lg">
+          {t.rich('thirdp', {
+            w: (chunks) => <span className="text-white font-semibold">{chunks}</span>,
+          })}
+        </p>
       </div>
-      <Button variant="primary" className="flex items-center gap-2">
+      <Button variant="primary" href="#contact" className="flex items-center gap-2">
         {t('btn')}
         <CgArrowRight size={16} />
       </Button>
-      <div className="mt-12 grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-6">
-        {counterStats.map((stat, index) => (
-          <Stat
-            key={index}
-            statCount={stat.statCount}
-            statTitle={t(`items.${stat.id}.description`)}
-            infinite={stat.infinite}
-            isPercentage={stat.isPercentage}
-          />
-        ))}
-      </div>
+      <StatsGrid
+        stats={{
+          stat1Label: t('items.motivation.description'),
+          stat2Label: t('items.german.description'),
+          stat3Label: t('items.techStack.description'),
+          stat4Label: t('items.cleanCode.description'),
+        }}
+      />
     </section>
   )
 }

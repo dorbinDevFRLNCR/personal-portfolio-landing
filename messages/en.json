@@ -2,69 +2,74 @@
   "nav": {
     "projects": "Projects",
     "about": "About Me",
-    "contacts": "Contacts"
+    "contacts": "Contact"
   },
   "hero": {
-    "badge": "Now accepting orders",
-    "info": "I build fast and visually appealing web applications using React and TypeScript. I write clean code and design user-friendly interfaces—from landing pages to e-commerce sites.",
+    "badge": "Open for Apprenticeship 2027",
+    "titlePrefix": "Aspiring",
+    "titleHighlight": "Software",
+    "titleSuffix": "Developer",
+    "info": "I am passionate about modern web technologies and clean architecture. Looking for an apprenticeship (Ausbildung) as a Software Developer (Fachinformatiker für Anwendungsentwicklung) to build robust digital solutions.",
     "btnProjects": "View projects",
-    "btnContact": "Contact me"
+    "btnContact": "Get in touch"
   },
   "projects": {
-    "subtitle": "My Work",
-    "title": "Projects",
+    "subtitle": "MY WORK",
+    "title": "Featured Projects",
     "items": {
       "vantage": {
-        "description": "A fully-featured landing page for a SaaS product. Responsive layout, hamburger menu, sections highlighting features, reviews, and pricing."
+        "description": "A fully responsive SaaS landing page showcasing modern UI components, feature highlights, user reviews, and structured pricing tables."
       },
       "furniro": {
-        "description": "An online furniture store with a shopping cart, favorites, and notifications. State management on Zustand."
+        "description": "An e-commerce web application with cart state management powered by Zustand, item filtering, and dynamic notifications."
       }
     },
-    "btn": "Open project"
+    "btn": "View project"
   },
   "about": {
+    "subtitle": "A LITTLE BIT ABOUT ME",
+    "title": "Who Am I",
+    "firstp": "Hi! My name is <w>Kirill</w>. I am an aspiring software developer with a strong focus on React, Next.js, and TypeScript.",
+    "secondp": "I place great emphasis on writing <w>clean, readable, and maintainable code</w>. I continuously learn fundamental computer science concepts and apply them in personal projects.",
+    "thirdp": "My goal is to secure an apprenticeship as a <w>Fachinformatiker für Anwendungsentwicklung</w> to deepen my technical expertise in a professional team.",
+    "btn": "Contact me",
     "items": {
-      "projectsCount": {
-        "description": "Ready-made projects"
+      "motivation": {
+        "description": "Self-Driven Learning"
       },
-      "older": {
-        "description": "Years old, young and hungry"
+      "german": {
+        "description": "German B2 Proficiency"
       },
-      "cafee": {
-        "description": "How much coffee did I drink"
+      "techStack": {
+        "description": "Modern Tech Stack"
       },
-      "responsive": {
-        "description": "Responsive layout"
+      "cleanCode": {
+        "description": "Clean Code & Architecture"
       }
-    },
-    "subtitle": "A little bit about myself",
-    "title": "Who am I",
-    "firstp": "Hi! My name is <w>Kirill</w>-I’m a frontend developer specializing in React applications. I code in TypeScript, style my layouts with Tailwind CSS, and manage state using Zustand.",
-    "secondp": "It’s important to me that the code is <w>clean and readable</w>, and that the interface is <w>user-friendly and fast</w>. I approach every project as if I were building it for myself.",
-    "thirdp": "I'm ready to take on landing pages, corporate websites, and front-end development for e-commerce projects",
-    "btn": "Discuss the project"
+    }
   },
   "contact": {
-    "subtitle": "Application",
-    "title": "Tell us about the project",
-    "nameLabel": "Name*",
-    "namePlaceholder": "What's your name?",
+    "subtitle": "CONTACT",
+    "title": "Let's Get in Touch",
+    "description": "I am currently looking for an apprenticeship (Ausbildung) position as a Software Developer. Feel free to reach out with inquiries or career opportunities!",
+    "nameLabel": "Name / Company*",
+    "namePlaceholder": "Your name or company name",
     "emailLabel": "Email*",
-    "emailPlaceholder": "your@email.com",
-    "messageLabel": "Project Description*",
-    "messagePlaceholder": "Tell me what needs to be done—the type of website, its features, the deadline...",
-    "btn": "Submit a request",
-    "successMsg": "Message sent!",
+    "emailPlaceholder": "your.email@company.com",
+    "messageLabel": "Message*",
+    "messagePlaceholder": "Your message, apprenticeship offer, or question...",
+    "btn": "Send message",
+    "successMsg": "Message sent successfully!",
     "errorMsg": "An error occurred while sending the message. Please try again later."
   },
   "callMe": {
-    "subtitle": "Communication",
-    "title": "Got a project? Let's talk",
-    "info": "I'm available for freelance projects. Feel free to reach out—I'll get back to you quickly."
+    "subtitle": "CONNECT & NETWORK",
+    "title": "Let's Start a Conversation 👋",
+    "info": "I am open to discuss apprenticeship opportunities or share my application documents. Feel free to connect via social platforms or email."
   },
   "footer": {
-    "first": "Made with",
-    "last": "and strong coffee."
+    "copyright": "© 2026 Kirill Pavlov · Aspiring Software Developer",
+    "impressum": "Legal Notice (Impressum)",
+    "datenschutz": "Privacy Policy (Datenschutz)"
   }
 }

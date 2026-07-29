@@ -5,8 +5,11 @@
     "contacts": "Kontakte"
   },
   "hero": {
-    "badge": "Bestellungen möglich",
-    "info": "Ich entwickle schnelle und ansprechende Webanwendungen mit React und TypeScript. Ich schreibe sauberen Code und gestalte benutzerfreundliche Oberflächen – von Landingpages bis hin zu E-Commerce-Lösungen.",
+    "badge": "Offen für Ausbildung 2027",
+    "titlePrefix": "Angehender",
+    "titleHighlight": "Software",
+    "titleSuffix": "Developer",
+    "info": "Ich begeistere mich für moderne Webtechnologien und sauberen Code. Auf der Suche nach einer Ausbildung zum Fachinformatiker für Anwendungsentwicklung, um fundierte Softwareprojekte umzusetzen.",
     "btnProjects": "Projekte ansehen",
     "btnContact": "Kontaktieren"
   },
@@ -25,43 +28,43 @@
   },
   "about": {
     "items": {
-      "projectsCount": {
-        "description": "Fertigprojekte"
+      "motivation": {
+        "description": "Motivation & Eigeninitiative"
       },
-      "older": {
-        "description": "Alt, jung und hungrig"
+      "german": {
+        "description": "Deutschkenntnisse"
       },
-      "cafee": {
-        "description": "Wie viel Kaffee habe ich getrunken"
+      "techStack": {
+        "description": "Modern Tech Stack"
       },
-      "responsive": {
-        "description": "Responsives Layout"
+      "cleanCode": {
+        "description": "Clean Code & Architektur"
       }
     },
     "subtitle": "Ein wenig über mich",
     "title": "Wer bin ich",
-    "firstp": "Hallo! Mein Name ist <w>Kirill</w> – ich bin Frontend-Entwickler und habe mich auf React-Anwendungen spezialisiert. Ich programmiere in TypeScript, gestalte meine Layouts mit Tailwind CSS und verwalte den State mit Zustand.",
-    "secondp": "Mir ist es wichtig, dass der Code <w>sauber und gut lesbar</w> ist und dass die Benutzeroberfläche <w>benutzerfreundlich und schnell</w> ist. Ich gehe jedes Projekt so an, als würde ich es für mich selbst entwickeln.",
-    "thirdp": "Ich bin bereit, Landingpages, Unternehmenswebsites und die Frontend-Entwicklung für E-Commerce-Projekte zu übernehmen.",
-    "btn": "Das Projekt besprechen"
+    "firstp": "Hallo! Mein Name ist <w>Kirill</w>. Ich begeistere mich für moderne Webtechnologien und die Entwicklung strukturierter Softwarelösungen. Ich programmiere vor allem mit TypeScript, Next.js und React. Ich bin ein <w>selbstlernender Entwickler</w>, der sich ständig weiterbildet und neue Technologien ausprobiert.",
+    "secondp": "Mir ist es wichtig, dass Code <w>nicht nur funktioniert</w>, sondern sauber, gut lesbar und erweiterbar ist. Ich lerne kontinuierlich neue Konzepte der Informatik und arbeite an eigenen Projekten.",
+    "thirdp": "Mein Ziel ist eine <w>Ausbildung zum Fachinformatiker für Anwendungsentwicklung</w>, um meine theoretischen und praktischen Kenntnisse in einem professionellen Team zu vertiefen.",
+    "btn": "Kontakt aufnehmen"
   },
   "contact": {
-    "subtitle": "Anwendung",
-    "title": "Erzähl mir etwas über das Projekt",
-    "nameLabel": "Name*",
-    "namePlaceholder": "Wie heißt du?",
+    "subtitle": "KONTAKT",
+    "title": "Lass uns in Kontakt treten",
+    "nameLabel": "Name / Unternehmen",
+    "namePlaceholder": "Wie heißen Sie?",
     "emailLabel": "Email*",
-    "emailPlaceholder": "your@email.com",
-    "messageLabel": "Projektbeschreibung*",
-    "messagePlaceholder": "Sag mir, was zu tun ist – die Art der Website, ihre Funktionen, die Frist...",
-    "btn": "Anfrage senden",
+    "emailPlaceholder": "ihre@email.com",
+    "messageLabel": "Nachricht",
+    "messagePlaceholder": "Ihre Nachricht, ein Ausbildungsangebot oder eine Frage...",
     "successMsg": "Anfrage gesendet!",
-    "errorMsg": "Beim Senden der Nachricht ist ein Fehler aufgetreten. Bitte versuche es später erneut."
+    "errorMsg": "Beim Senden der Nachricht ist ein Fehler aufgetreten. Bitte versuche es später erneut.",
+    "btn": "Nachricht senden"
   },
   "callMe": {
-    "subtitle": "Kommunikation",
-    "title": "Hast du ein Projekt? Lass uns darüber reden",
-    "info": "Ich stehe für freiberufliche Projekte zur Verfügung. Melden Sie sich gerne bei mir – ich melde mich umgehend bei Ihnen."
+    "subtitle": "KONTAKT & NETZWERK",
+    "title": "Lass uns ins Gespräch kommen 👋",
+    "info": "Ich suche eine Ausbildung als Fachinformatiker für Anwendungsentwicklung. Gerne sende ich Ihnen meine vollständigen Bewerbungsunterlagen zu oder stehe für ein Kennenlernen zur Verfügung."
   },
   "footer": {
     "first": "Mit",

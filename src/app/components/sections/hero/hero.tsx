@@ -35,7 +35,7 @@ async function Hero() {
           {t('badge')}
         </div>
         <h1 className="text-5xl font-bold max-w-2xs tracking-tight mt-4 text-white md:text-7xl lg:text-8xl">
-          Frontend <span className="grad">React</span> Developer
+          {t('titlePrefix')} <span className="grad">{t('titleHighlight')}</span> {t('titleSuffix')}
         </h1>
         <p className="text-base text-gray-300 mt-8 max-w-3xl md:text-xl md:max-w-2xl">
           {t('info')}
@@ -53,7 +53,17 @@ async function Hero() {
           </Button>
         </div>
         <div className="flex flex-wrap gap-2 pt-4">
-          {['React', 'TypeScript', 'Tailwind CSS', 'Zustand', 'Vite', 'Git'].map((skill, index) => (
+          {[
+            'React',
+            'Next.JS',
+            'TypeScript',
+            'Tailwind CSS',
+            'Zustand',
+            'Vite',
+            'pnpm',
+            'Vercel',
+            'Git',
+          ].map((skill, index) => (
             <Badge key={index}>{skill}</Badge>
           ))}
         </div>
