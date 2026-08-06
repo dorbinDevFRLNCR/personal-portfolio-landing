@@ -34,7 +34,7 @@ async function Hero() {
           <span style={{ background: '#C77DFF' }} className="w-2 h-2 rounded-full animate-pulse" />
           {t('badge')}
         </div>
-        <h1 className="text-5xl font-bold max-w-2xs tracking-tight mt-4 text-white md:text-7xl lg:text-8xl">
+        <h1 className="text-5xl select-none font-bold max-w-2xs tracking-tight mt-4 text-white md:text-7xl lg:text-8xl">
           {t('titlePrefix')} <span className="grad">{t('titleHighlight')}</span> {t('titleSuffix')}
         </h1>
         <p className="text-base text-gray-300 mt-8 max-w-3xl md:text-xl md:max-w-2xl">

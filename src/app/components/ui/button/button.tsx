@@ -38,7 +38,7 @@ function Button({
 
     // Для внутренних ссылок используем Link из i18n
     return (
-      <Link href={href} className={`btn-${variant} ${className}`.trim()}>
+      <Link href={href} className={`btn-${variant} ${className} select-none`.trim()}>
         {children}
       </Link>
     )
@@ -46,7 +46,7 @@ function Button({
 
   return (
     <button
-      className={`btn-${variant} ${className}`.trim()}
+      className={`btn-${variant} ${className} select-none`.trim()}
       onClick={onClick}
       type={type}
       disabled={disabled}
